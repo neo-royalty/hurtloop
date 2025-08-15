@@ -8,3 +8,5 @@ contact us at ryonahotel@gmail.com
 thanks for reading our readme!
 
 https://ryona-hotel.github.io/hurtloop/
+
+https://neo-royalty.github.io/hurtloop/
