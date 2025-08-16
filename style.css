@@ -30,6 +30,11 @@ html, body {
 	min-height: 100vh;
 }
 
+
+body {
+  background: red; /* test solid color first */
+}
+
 body {
 	background-image: url('background.jpg');
 	background-size: cover;
