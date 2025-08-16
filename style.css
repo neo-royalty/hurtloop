@@ -30,13 +30,6 @@ html, body {
 	min-height: 100vh;
 }
 
-/* body {
-	background-image: url('background.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: repeat-y;
-} */
-
 p, pre {
 	font-size:18px;
 	word-break: break-word;
@@ -284,5 +277,8 @@ img {
 }
 
 body {
-  background: red; /* test solid color first */
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: repeat-y;
 }
