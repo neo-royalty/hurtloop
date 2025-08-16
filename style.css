@@ -3,31 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-/* uh oh its turning into a chimera made of different css templates */
-html, #container, .inner { background-color:transparent;}
-html {
-  background:url(background.jpg) center center no-repeat fixed;
-  background-size:cover;
-}
-body {
-  max-width:800px;
-  margin:25px auto;
-}
-header, #content, footer { 
-  background: rgba(0,0,0,.8); 
-  padding:25px;
-  color:#FFFFFF; 
-}
-iframe {
-  max-width:100%;
-}
-
 html, body {
 	margin: 0;
 	padding: 0;
 	background:#152018;
 	font-family: 'VT323', monospace;
 	min-height: 100vh;
+}
+
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: repeat-y;
 }
 
 p, pre {
@@ -274,11 +262,4 @@ img {
   right: 0;
   background: rgba(255, 255, 255, 0.05);
   animation: flicker 0.15s infinite;
-}
-
-body {
-	background-image: url('background.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: repeat-y;
 }
