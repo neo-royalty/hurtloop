@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 
-  <head>
-    <title>hurtloop.com</title>
-  </head>
+<head>
+  <title>hurtloop.com</title>
+  <link rel="stylesheet" href="style.css"/> <!--running a css i stole from somewhere-->
+  <style>
+    #startpage {
+    	color: #fff;
+    	font-size: 20px;
+    }
+    a {
+    	text-decoration: none;
+    	color: #ffff00;
+    }
+  </style>
+</head>
 
-  <body style="background:black; color:white;">
-    <p>Hello World.</p>
-    <p>Say hi to brackets from me</p>
-    <img src="images/erosia.png" alt="My Drawing">
-    <a href="fairies/fairies.html"><img src="images/inversa.png" alt="My Other Drawing"></a>
-  </body>
-
+<body>  
+  
+  <!--these make the scanlines; theyre empty because theyre purely css-->
+  <div class="scanlines"></div>
+  <div class="scanline"></div>
+  
+  <center>
+    <div id="startpage" class="crt">
+      <br><br><br><br><br><br> <!--empty linebreaks to push text down because i cant be arsed styling it with proper positionals-->
+      Welcome to <i>hurtloop</i>. Would you like to become a Pain Pilot?
+      <br><br>
+      <a href="fairies/fairies.html">YES</a><br>
+      <a href="https://reddit.com">NO</a><br>
+    </div>
+  </center>
+  <img src="images/erosia.png" alt="My Drawing">
+  <a href="fairies/fairies.html"><img src="images/inversa.png" alt="My Other Drawing"></a>
   <audio src="ideation.mp3" autoplay loop></audio>
+</body>
 
 </html>
