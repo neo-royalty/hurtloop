@@ -4,17 +4,10 @@
   <meta charset="UTF-8">
   <title>Random Number</title>
 </head>
+
+  
 <body>
-  
-  <h1 id="number"></h1>
-  <script>
-    // Random number between 1 and 100
-    document.getElementById("number").textContent =
-      Math.floor(Math.random() * 100) + 1;
 
-  </script>
-
-  
 <p id="firePrint"></p>
 <script>
   let engineLeft;
@@ -25,27 +18,27 @@
 
   function update() {
   
-  engineLeft = Math.floor(Math.random() * 2);
-  engineRight = Math.floor(Math.random() * 2);
+  engineLeft = Math.floor(Math.random() * 100);
+  engineRight = Math.floor(Math.random() * 100);
 
   if (engineLeft == engineRight) {
     engineFire = true;
   }
   if (engineFire == true) {
-    fireAmount = Math.floor(Math.random() * 100);
+    fireAmount = Math.floor(Math.random() * 1000);
     engineFire = false;
   }
   if (fireAmount > 0) {
     fireAmount -= 1;
   }
   
-  document.getElementById('firePrint').textContent = fireAmount;
+  document.getElementById('firePrint').textContent = fireAmount   nullssssssssssss were here;
   requestAnimationFrame(update);
   } //update ends
   update(); //calls update
   
 </script>
 
-  nullssssssssssss were here
+  nullllllllll were here
 </body>
 </html>
