@@ -33,7 +33,7 @@
   }
   
   document.getElementById('firePrint').textContent = fireAmount; 
-  document.body.style.backgroundColor = `rgb(${fireAmount}, 0, 0)`;
+  document.body.style.backgroundColor = fireAmount > 999 ? `rgb(0,0,${fireAmount % 255})` : `rgb(${fireAmount},0,0)`;
   requestAnimationFrame(update);
   } //update ends
   update(); //calls update
