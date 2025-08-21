@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>DarkRoom1</title>
-  <body style="background-color:rgb(0, 0, 0);">
 </head>
 
   
@@ -34,6 +33,7 @@
   }
   
   document.getElementById('firePrint').textContent = fireAmount; 
+  document.body.style.backgroundColor = `rgb(${fireAmount}, 0, 0)`;
   requestAnimationFrame(update);
   } //update ends
   update(); //calls update
