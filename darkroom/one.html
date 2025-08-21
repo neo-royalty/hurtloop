@@ -5,8 +5,8 @@
   <title>Random Number</title>
 </head>
 <body>
+  
   <h1 id="number"></h1>
-
   <script>
     // Random number between 1 and 100
     document.getElementById("number").textContent =
@@ -23,8 +23,8 @@
   let fireAmount = 0;
   let fireIntensity = 0;
   
-  engineLeft = Math.floor(Math.random() * 100);
-  engineRight = Math.floor(Math.random() * 100);
+  engineLeft = Math.floor(Math.random() * 2);
+  engineRight = Math.floor(Math.random() * 2);
 
   if (engineLeft == engineRight) {
     engineFire = true;
@@ -34,7 +34,7 @@
     engineFire = false;
   }
   if (fireAmount > 0) {
-    fireAmount = -1;
+    fireAmount -= 1;
   }
   
   document.getElementById('firePrint').textContent = fireAmount;
