@@ -11,7 +11,37 @@
     // Random number between 1 and 100
     document.getElementById("number").textContent =
       Math.floor(Math.random() * 100) + 1;
+
   </script>
+  
+<script>
+  let engineLeft;
+  let engineRight;
+  let engineFire = false;
+  let fireAmount = 0;
+  let fireIntensity = 0;
+  
+  engineLeft = Math.floor(Math.random() * 100);
+  engineRight = Math.floor(Math.random() * 100);
+
+  if (engineLeft == engineRight) {
+    engineFire = true;
+  }
+  if (engineFire == true) {
+    fireAmount = Math.floor(Math.random() * 100);
+    engineFire = false;
+  }
+  if (fireAmount > 0) {
+    fireAmount = -1;
+  }
+  
+</script>
+
+  
+  
+  
+
+  
   <br>
   null was here
 </body>
